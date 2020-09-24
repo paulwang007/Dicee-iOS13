@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var diceOne: UIImageView?
+    @IBOutlet weak var diceTwo: UIImageView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // Image literal
+        diceOne?.image = #imageLiteral(resourceName: "DiceOne")
+        diceTwo?.image = #imageLiteral(resourceName: "DiceSix")
     }
-
-
+    
+    @IBAction func rollDice(_ sender: Any) {
+        
+    }
 }
-
