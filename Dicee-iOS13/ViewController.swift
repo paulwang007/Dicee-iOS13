@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // IB = Interface Builder.
     @IBOutlet weak var diceOne: UIImageView?
     @IBOutlet weak var diceTwo: UIImageView?
     
@@ -21,7 +22,10 @@ class ViewController: UIViewController {
         diceTwo?.image = #imageLiteral(resourceName: "DiceSix")
     }
     
-    @IBAction func rollDice(_ sender: Any) {
-        
+    // @IBAction
+    @IBAction func rollDice(_ sender: UIButton) {
+        // diceOne and diceTwo are found by @IBOutlet
+        diceOne?.image = #imageLiteral(resourceName: "DiceFive")
+        diceTwo?.image = #imageLiteral(resourceName: "DiceThree")
     }
 }
