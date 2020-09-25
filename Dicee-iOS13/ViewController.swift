@@ -21,12 +21,14 @@ class ViewController: UIViewController {
         // Image literal
 //        diceOne?.image = #imageLiteral(resourceName: "DiceOne")
 //        diceTwo?.image = #imageLiteral(resourceName: "DiceSix")
+        
     }
     
     // @IBAction
     @IBAction func rollDice(_ sender: UIButton) {
         
         // [list items][index]
+
         diceOne?.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo")][1]
     }
 }
