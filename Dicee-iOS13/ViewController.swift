@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         // Image literal
 //        diceOne?.image = #imageLiteral(resourceName: "DiceOne")
 //        diceTwo?.image = #imageLiteral(resourceName: "DiceSix")
+        
     }
     
     // @IBAction
