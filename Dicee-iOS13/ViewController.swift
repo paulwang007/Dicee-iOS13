@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     // IB = Interface Builder.
+    // diceOne and diceTwo are found by @IBOutlet
     @IBOutlet weak var diceOne: UIImageView?
     @IBOutlet weak var diceTwo: UIImageView?
     
@@ -18,14 +19,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Image literal
-        diceOne?.image = #imageLiteral(resourceName: "DiceOne")
-        diceTwo?.image = #imageLiteral(resourceName: "DiceSix")
+//        diceOne?.image = #imageLiteral(resourceName: "DiceOne")
+//        diceTwo?.image = #imageLiteral(resourceName: "DiceSix")
     }
     
     // @IBAction
     @IBAction func rollDice(_ sender: UIButton) {
-        // diceOne and diceTwo are found by @IBOutlet
-        diceOne?.image = #imageLiteral(resourceName: "DiceFive")
-        diceTwo?.image = #imageLiteral(resourceName: "DiceThree")
+        // [list items][index]
+        diceOne?.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo")][1]
     }
 }
