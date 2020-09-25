@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     // @IBAction
     @IBAction func rollDice(_ sender: UIButton) {
         // [list items][index]
+
         diceOne?.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo")][1]
     }
 }
