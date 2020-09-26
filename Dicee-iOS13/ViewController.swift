@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let diceArray = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")]
         
         // Int.random(in: 0...5) "...: is Range
-        Int.random(in: 0...5)
+//        Int.random(in: 0...5)
         
         diceOne?.image = diceArray.randomElement()
         diceTwo?.image = diceArray.randomElement()
