@@ -27,7 +27,13 @@ class ViewController: UIViewController {
     @IBAction func rollDice(_ sender: UIButton) {
         
         // [list items][index]
-
-        diceOne?.image = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo")][1]
+        // let = val
+        let diceArray = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")]
+        
+        // Int.random(in: 0...5) "...: is Range
+        Int.random(in: 0...5)
+        
+        diceOne?.image = diceArray.randomElement()
+        diceTwo?.image = diceArray.randomElement()
     }
 }
